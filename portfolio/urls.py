@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.urls import path
+from . import views
 
 urlpatterns = [
     url(r'^', include('mainpage.urls')), 
     url(r'^admin/', admin.site.urls),
+    path('treesplitting', views.treesplittng),
+    path('desktopdisplay', views.desktopdisplay)
 ]

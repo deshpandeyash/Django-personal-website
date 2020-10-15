@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from django.views.generic import ListView
 from django.views.generic.edit import FormView
 from django.contrib.messages.views import SuccessMessageMixin
+from django.shortcuts import render
 
 from django.core.mail import send_mail, get_connection
 from django.conf import settings
@@ -35,3 +36,4 @@ class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
             fail_silently=False
         )
         return super(ProjectListAndFormView, self).form_valid(form)
+
