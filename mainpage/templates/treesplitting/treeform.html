@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Tree Splitting</title>
-</head>
-<body>
-<h1>Here will be the tree splitting Simulator</h1>
-</body>
-</html>
+<form action="/treesplitting" method="post">
+ {% csrf_token %}
+<div class="form-horizontal">
+<div class="span5">
+    {% for field in form %}
+    <div class="control-group">
+        {{ field.errors }}
+        <p><b>{{field.label_tag}}</b>: {{field}}
+        {% if field.help_text %}
+        <p class="help">{{ field.help_text|safe }}</p>
+    </div>
+
+        {% endif %}
+{% endfor %}
+     <div id="button">
+         <input id="submit" class="submit_button btn btn-lg btn-block wow fadeInUp" type="submit" value="SIMULATE" />
+     </div>
+</div>
+</div>
+</form>

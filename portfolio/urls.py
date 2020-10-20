@@ -21,6 +21,6 @@ from . import views
 urlpatterns = [
     url(r'^', include('mainpage.urls')), 
     url(r'^admin/', admin.site.urls),
-    path('treesplitting', views.treesplittng),
+    path('treesplitting', views.treesplitting),
     path('desktopdisplay', views.desktopdisplay)
 ]
