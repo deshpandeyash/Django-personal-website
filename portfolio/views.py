@@ -7,8 +7,10 @@ from subprocess import run, PIPE
 import sys
 from sim_scripts import simstudy
 
+
 def treesplitting(request):
-    output = 0
+    throughput = 0
+    output = 'digraph {a -> b}'
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
@@ -24,14 +26,13 @@ def treesplitting(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return render(request, 'treesplitting/treemain.html', {'form': form, 'data': throughput})
+            return render(request, 'treesplitting/treemain.html', {'form': form, 'data': throughput, 'dot_file': output})
 
     # if a GET (or any other method) we'll create a blank form
     else:
         form = TreeSplittingForm()
 
-    return render(request, 'treesplitting/treemain.html', {'form': form, 'data': output})
-
+    return render(request, 'treesplitting/treemain.html', {'form': form, 'data': throughput, 'dot_file': output})
 
 
 def desktopdisplay(request):

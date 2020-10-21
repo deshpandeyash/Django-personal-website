@@ -1,20 +1,16 @@
-<form action="/treesplitting" method="post">
+<form class="form-horizontal" action="/treesplitting" method="post">
  {% csrf_token %}
-<div class="form-horizontal">
-<div class="span5">
     {% for field in form %}
-    <div class="control-group">
+        <div class="form-group">
         {{ field.errors }}
-        <p><b>{{field.label_tag}}</b>: {{field}}
+         <label class="control-label col-sm-2">{{field.label_tag}}</label>
+        <div class="col-sm-10">{{ field }}</div>
         {% if field.help_text %}
         <p class="help">{{ field.help_text|safe }}</p>
-    </div>
-
         {% endif %}
+        </div>
 {% endfor %}
      <div id="button">
          <input id="submit" class="submit_button btn btn-lg btn-block wow fadeInUp" type="submit" value="SIMULATE" />
      </div>
-</div>
-</div>
 </form>
