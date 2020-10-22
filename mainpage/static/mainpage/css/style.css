@@ -166,7 +166,7 @@ h6 {
 }
 
 input:nth-child(3n){
-    height: 500px%;
+    height: 500px;
 }
 
 /* ---------------------------------------------- /*
@@ -343,10 +343,7 @@ div[class^="devicon"] span{
     text-align: center;
 }
 .calltoaction {
-    background: url(../images/action.jpg);
-	background-color: #222;
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	background: #222 url(../images/background.jpg) no-repeat 0 0;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
@@ -391,11 +388,7 @@ div[class^="devicon"] span{
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
-	background-color: #222;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background: #222 url(../images/background.jpg) no-repeat fixed 50% 50%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
@@ -761,7 +754,7 @@ div[class^="devicon"] span{
 	padding: 1px 10px;
 	margin-bottom: 20px;
 	border-radius: 4px;
-	font: 5px, 'Raleway', sans-serif;
+	;
 }
 
 .tools > span:hover {

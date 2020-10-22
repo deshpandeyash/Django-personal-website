@@ -19,7 +19,7 @@
 	<meta name="description" content="Portfolio webpage">
 	<meta name="author" content="Yash Deshpande">
 
-{#	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">#}
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
 	<link rel="shortcut icon" href="{% static 'mainpage/images/OnlyLogo.jpg' %}" />
@@ -31,17 +31,22 @@
 	<link href="{% static 'mainpage/css/animate.css" rel="stylesheet' %}">
 
 	<!-- Custom styles CSS -->
-{#	<link href="{% static 'mainpage/css/style.css' %}" rel="stylesheet" media="screen">#}
+	<link href="{% static 'mainpage/css/style.css' %}" rel="stylesheet" media="screen">
 
     <script src="{% static 'mainpage/js/modernizr.custom.js' %}"></script>
 </head>
 <body>
 
 			<div class="col-sm-5 col-sm-offset-0.5">
+                <div style="text-align: center;"><h1>Simulation Parameters</h1></div>
 				{% include 'treesplitting/treeform.html' %}
 			</div>
 
-            <h1>Throughput = {{ data }}</h1>
-                {% include 'treesplitting/treerender.html' %}
+
+            <div class="col-sm-5 col-sm-offset-0.5">
+                <div style="text-align: center;"><h1>Throughput = {{ data }}</h1></div>
+                <div style="text-align: center;"><img src="{{ dot_file }}" alt="Base64 Decoded" align="right"></div>
+            </div>
+
 </body>
 </html>
