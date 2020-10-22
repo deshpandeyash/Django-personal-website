@@ -387,7 +387,6 @@ mainpage/static/mainpage/images/background.jpg
 mainpage/static/mainpage/images/desktopdisplay.jpeg
 mainpage/static/mainpage/images/treesplitting.png
 package-lock.json
-requirements.txt
 sim_scripts/branchnode.py
 sim_scripts/graphdisplay.py
 sim_scripts/packet.py
