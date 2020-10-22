@@ -387,14 +387,4 @@ mainpage/static/mainpage/images/background.jpg
 mainpage/static/mainpage/images/desktopdisplay.jpeg
 mainpage/static/mainpage/images/treesplitting.png
 package-lock.json
-sim_scripts/branchnode.py
-sim_scripts/graphdisplay.py
-sim_scripts/packet.py
-sim_scripts/packetlist.py
-sim_scripts/simparam.py
-sim_scripts/simresult.py
-sim_scripts/simstate.py
-sim_scripts/simstudy.py
-sim_scripts/simulation.py
-sim_scripts/slot.py
-sim_scripts/treestate.py
+
