@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '&cahwqh=j%ky27#js%9ji+^*fp))_b
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS =  ['*']
+ALLOWED_HOSTS = ['deshpandeyash@gmail.com','3.121.135.180']
 
 # Application definition
 
