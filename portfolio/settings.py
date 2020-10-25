@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '&cahwqh=j%ky27#js%9ji+^*fp))_b
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','www.deshpandeyash.com','3.121.135.180']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','www.deshpandeyash.com','3.121.135.180', 'limitless-shelf-66427.herokuapp.com']
 
 # Application definition
 
